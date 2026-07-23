@@ -206,14 +206,14 @@
     .section { padding: 2rem 1rem; }
     .section-header { flex-wrap: wrap; gap: 0.5rem; }
     .section-title { font-size: 1.1rem; }
-    .card-top { grid-template-columns: 1fr; }
-    .card-sigil { flex-direction: row; min-height: auto; padding: 0; border-bottom: 1px solid var(--parchment-deeper); }
-    .sigil-img { width: 90px; height: 90px; flex-shrink: 0; object-position: top center; }
-    .sigil-no-img { width: 90px; height: 90px; flex-shrink: 0; }
-    .sigil-meta { flex-direction: row; flex-wrap: wrap; gap: 6px; padding: 10px 12px; align-items: center; justify-content: flex-start; }
+    .card-top { grid-template-columns: 100px 1fr; }
+    .card-sigil { display: contents; padding: 0; gap: 0; }
+    .sigil-img { grid-column: 1; grid-row: 1; width: 100px; height: 100px; object-position: top center; }
+    .sigil-no-img { grid-column: 1; grid-row: 1; width: 100px; height: 100px; }
+    .sigil-meta { grid-column: 1 / -1; grid-row: 2; display: flex; flex-direction: row; flex-wrap: wrap; gap: 6px; width: 100%; padding: 8px 14px; background: var(--parchment-dark); border-top: 1px solid var(--parchment-deeper); border-bottom: 1px solid var(--parchment-deeper); align-items: center; justify-content: flex-start; }
     .sigil-dates { font-size: 10px; }
     .sigil-credit { display: none; }
-    .card-identity { border-left: none; padding: 12px 14px 10px; }
+    .card-identity { grid-column: 2; grid-row: 1; border-left: 1px solid var(--parchment-deeper); padding: 12px 14px 10px; }
     .card-name { font-size: 1.25rem; }
     .card-role { font-size: 9px; }
     .card-origin { font-size: 0.85rem; }
