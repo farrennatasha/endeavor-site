@@ -196,11 +196,38 @@
   footer { background: var(--ink); color: var(--ink-faint); text-align: center; padding: 2.5rem 1.5rem; font-size: 13px; line-height: 1.8; margin-top: 0; }
   footer a { color: var(--accent-gold); text-decoration: none; }
 
-  @media (max-width: 520px) {
-    .card-top { grid-template-columns: 85px 1fr; }
-    .card-name { font-size: 1.15rem; }
-    .hero-meta { gap: 1.2rem; }
-    .memorial-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+  @media (max-width: 600px) {
+    .hero { padding: 3rem 1.25rem 2.5rem; }
+    .hero-title { font-size: 1.9rem; }
+    .hero-sub { font-size: 1rem; }
+    .hero-meta { gap: 1rem; }
+    .meta-num { font-size: 1.5rem; }
+    .meta-label { font-size: 10px; }
+    .section { padding: 2rem 1rem; }
+    .section-header { flex-wrap: wrap; gap: 0.5rem; }
+    .section-title { font-size: 1.1rem; }
+    .card-top { grid-template-columns: 1fr; }
+    .card-sigil { flex-direction: row; min-height: auto; padding: 0; border-bottom: 1px solid var(--parchment-deeper); }
+    .sigil-img { width: 90px; height: 90px; flex-shrink: 0; object-position: top center; }
+    .sigil-no-img { width: 90px; height: 90px; flex-shrink: 0; }
+    .sigil-meta { flex-direction: row; flex-wrap: wrap; gap: 6px; padding: 10px 12px; align-items: center; justify-content: flex-start; }
+    .sigil-dates { font-size: 10px; }
+    .sigil-credit { display: none; }
+    .card-identity { border-left: none; padding: 12px 14px 10px; }
+    .card-name { font-size: 1.25rem; }
+    .card-role { font-size: 9px; }
+    .card-origin { font-size: 0.85rem; }
+    .tabs { overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; }
+    .tab-btn { font-size: 12px; padding: 8px 12px; white-space: nowrap; }
+    .bio-text { font-size: 13.5px; line-height: 1.65; }
+    .legacy-item { font-size: 13px; }
+    .funfact-text { font-size: 13.5px; }
+    .tab-content { padding: 1rem; }
+    .memorial-wall { padding: 2rem 1rem; }
+    .memorial-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+    .memorial-name { font-size: 13px; }
+    .batavia-banner { font-size: 0.88rem; padding: 0.85rem 1rem; }
+    footer { font-size: 12px; padding: 2rem 1rem; }
   }
 </style>
 </head>
